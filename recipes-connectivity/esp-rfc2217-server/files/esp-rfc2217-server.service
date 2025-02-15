@@ -1,0 +1,10 @@
+[Unit]
+Description=Provides a telnet port for serial connection to ESP
+
+[Service]
+ExecStart=/usr/bin/esp-rfc2217-server -p 5555 -b 115200 -v /dev/ttyAMA3 --boot-pin=31 --enable-pin=3
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
