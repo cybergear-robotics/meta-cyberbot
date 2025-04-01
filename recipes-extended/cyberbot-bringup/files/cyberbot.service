@@ -1,0 +1,10 @@
+[Unit]
+Description=CyberBot Service
+
+[Service]
+ExecStart=/usr/bin/cyberbot-init
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
