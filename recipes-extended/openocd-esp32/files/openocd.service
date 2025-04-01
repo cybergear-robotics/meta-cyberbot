@@ -1,0 +1,10 @@
+[Unit]
+Description=OpenOCD for ESP32 server
+
+[Service]
+ExecStart=/usr/bin/openocd -f interface/raspberrypi-native.cfg -f target/esp32s3.cfg -c "bindto 0.0.0.0; adapter speed 1000"
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
