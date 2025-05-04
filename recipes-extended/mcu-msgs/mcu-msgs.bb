@@ -2,7 +2,7 @@ DESCRIPTION = "Example of minimal publisher/subscriber using rclcpp."
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 SRC_URI = "git://git@git.internal:4122/robot/mcu_msgs.git;protocol=ssh;branch=master"
-SRCREV = "380847d56b60c528d8b9533509d0c8a5a02770a2"
+SRCREV = "97fb4ea0cdf81d9e500f208a0042136a39601d03"
 
 inherit ros_distro_jazzy
 
